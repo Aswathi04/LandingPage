@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>the most "useless" landing page | TinkerHub</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#FFFFFF;
+    --ink:#111111;
+    --sub:#5B5B5B;
+    --accent:#FF5A36;
+    --accent-2:#FFD166;
+    --line:#111111;
+    --hair: rgba(17,17,17,0.12);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:'Inter', sans-serif;
+    overflow-x:hidden; position:relative;
+  }
+  h1,h2,h3{font-family:'Space Grotesk', sans-serif; margin:0;}
+
+  .doodle{position:absolute; z-index:0; pointer-events:none;}
+
+  header{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:22px 6vw; border-bottom:1.5px solid var(--hair);
+    position:sticky; top:0; background:var(--bg); z-index:20;
+  }
+  .wordmark{font-family:'Space Grotesk', sans-serif; font-weight:700; font-size:1.05rem; display:flex; align-items:center; gap:8px;}
+  header a.back{
+    font-size:0.85rem; font-weight:600; text-decoration:none; color:var(--ink);
+    border:1.5px solid var(--ink); border-radius:999px; padding:8px 16px;
+  }
+
+  section{position:relative; z-index:1; padding:70px 6vw;}
+  .wrap{max-width:820px; margin:0 auto;}
+
+  /* HERO */
+  .hero{text-align:center; padding-top:80px; padding-bottom:60px;}
+  .hero h1{
+    font-size:clamp(2.2rem, 5.6vw, 3.6rem); font-weight:700; line-height:1.15;
+  }
+  .hero h1 .quote-mark{color:var(--accent);}
+  .hero p{
+    max-width:520px; margin:22px auto 0; font-size:1.05rem; color:var(--sub); line-height:1.65;
+  }
+
+  /* ROADMAP */
+  .roadmap{display:flex; flex-direction:column; align-items:center;}
+  .stage-card{
+    position:relative; width:100%; max-width:680px;
+    border:2px solid var(--ink); border-radius:28px; padding:32px 36px;
+    background:#fff;
+  }
+  .stage-icon{
+    width:56px; height:56px; border-radius:50%; border:2px solid var(--ink);
+    background:#FFF9F1; display:flex; align-items:center; justify-content:center;
+    margin-bottom:14px; overflow:hidden;
+  }
+  .stage-icon svg{width:36px; height:36px;}
+  .stage-card h2{font-size:1.5rem; font-weight:700; margin-bottom:6px;}
+  .stage-card .stage-label{
+    font-size:0.78rem; font-weight:600; letter-spacing:0.05em; text-transform:uppercase;
+    color:var(--accent); margin-bottom:6px; display:block;
+  }
+  .stage-card p.prompt{color:var(--sub); font-size:0.98rem; line-height:1.65; margin:10px 0 14px; max-width:600px;}
+  .stage-card ul{margin:0 0 14px; padding-left:20px; color:var(--sub); font-size:0.96rem; line-height:1.7;}
+  .stage-card .include-box{
+    display:inline-block; border:1.5px solid var(--ink); border-radius:12px;
+    padding:12px 18px; font-size:0.92rem; background:#FFF9F1;
+  }
+  .stage-card .include-box b{font-weight:700;}
+
+  .arrow-connector{
+    width:60px; height:70px; margin:6px 0; flex-shrink:0;
+  }
+  .arrow-connector svg{width:100%; height:100%; display:block;}
+
+  /* EXAMPLE LINK CALLOUT */
+  .example-callout{
+    border:2px solid var(--ink); border-radius:20px; padding:30px 34px;
+    text-align:center; margin-top:20px;
+    background:repeating-linear-gradient(135deg, #fff, #fff 14px, #FAFAFA 14px, #FAFAFA 28px);
+  }
+  .example-callout h3{font-size:1.3rem; margin-bottom:10px;}
+  .example-callout p{color:var(--sub); font-size:0.95rem; margin-bottom:20px;}
+  .example-btn{
+    display:inline-block; font-family:'Space Grotesk', sans-serif; font-weight:700;
+    background:var(--ink); color:#fff; padding:13px 28px; border-radius:999px;
+    text-decoration:none; font-size:0.95rem;
+  }
+
+  footer{
+    text-align:center; padding:40px 6vw; border-top:1.5px solid var(--hair);
+    font-size:0.85rem; color:var(--sub);
+  }
+</style>
+</head>
+<body>
+
+<div class="doodle" style="top:120px; left:2vw;">
+  <svg width="54" height="54" viewBox="0 0 100 100"><path d="M20,50 Q10,10 50,15 Q90,10 82,50 Q90,90 50,85 Q10,90 20,50Z" fill="none" stroke="var(--ink)" stroke-width="2" opacity="0.5"/></svg>
+</div>
+<div class="doodle" style="top:400px; right:3vw;">
+  <svg width="50" height="50" viewBox="0 0 100 100"><circle cx="50" cy="50" r="38" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-dasharray="5 8"/></svg>
+</div>
+<div class="doodle" style="top:1400px; left:1.5vw;">
+  <svg width="46" height="46" viewBox="0 0 100 100"><rect x="18" y="18" width="64" height="64" rx="16" fill="none" stroke="var(--ink)" stroke-width="2" opacity="0.4" transform="rotate(10 50 50)"/></svg>
+</div>
+
+<header>
+  <div class="wordmark">🐉 useless projects</div>
+  <a class="back" href="#">← back to main site</a>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <h1>the most <span class="quote-mark">"</span>useless<span class="quote-mark">"</span> landing page</h1>
+    <p>here's everything you could stuff into your landing page. no rules, just a rough map so you're not staring at a blank page at 3 AM.</p>
+  </div>
+</section>
+
+<!-- ROADMAP -->
+<section>
+  <div class="wrap roadmap">
+
+    <div class="stage-card">
+      <div class="stage-icon">
+        <svg viewBox="0 0 60 60"><path d="M12 40 C10 22 22 10 34 12 C33 8 38 5 42 8 C40 11 40 14 42 16 C50 20 52 30 46 38 C48 42 46 46 42 46 L38 44 C34 47 26 47 20 44 C16 46 12 44 12 40Z" fill="#FF5A36" stroke="var(--ink)" stroke-width="2"/><circle cx="36" cy="22" r="2.4" fill="var(--ink)"/><path d="M42 32 L50 30 M42 36 L49 37" stroke="var(--ink)" stroke-width="2" stroke-linecap="round"/></svg>
+      </div>
+      <span class="stage-label">origin story</span>
+      <h2>the spark</h2>
+      <p class="prompt">the exact moment the idea happened. was it a joke that went too far? a dare? someone too sleep-deprived to think straight at 11 PM? set the scene: who said what, and what made everyone go "wait... we could actually build that."</p>
+      <div class="include-box"><b>include:</b> 2–4 sentences of the origin story + one direct quote from the moment.</div>
+    </div>
+
+    <div class="arrow-connector">
+      <svg viewBox="0 0 60 70"><path d="M30 4 C10 20 10 50 30 62" stroke="var(--ink)" stroke-width="2.5" fill="none"/><path d="M22 54 L30 66 L38 54" stroke="var(--ink)" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/></svg>
+    </div>
+
+    <div class="stage-card">
+      <div class="stage-icon">
+        <svg viewBox="0 0 60 60"><path d="M12 40 C10 22 22 10 34 12 C32 7 36 4 39 7 C38 9 39 11 40 13 C42 8 46 7 48 10 C46 12 46 14 47 16 C52 21 52 30 46 38 C48 42 46 46 42 46 L38 44 C34 47 26 47 20 44 C16 46 12 44 12 40Z" fill="#4FC9C1" stroke="var(--ink)" stroke-width="2"/><path d="M32 22 L36 22 M39 22 L43 22" stroke="var(--ink)" stroke-width="2" stroke-linecap="round"/></svg>
+      </div>
+      <span class="stage-label">before venue day</span>
+      <h2>before you showed up</h2>
+      <p class="prompt">what prep happened before the event, not a project plan, just a chaotic to-do list.</p>
+      <ul>
+        <li>what you ordered or scavenged beforehand</li>
+        <li>what you argued about, and who won</li>
+        <li>how you split up roles (bonus points if it wasn't very organized)</li>
+      </ul>
+      <div class="include-box"><b>include:</b> 3–5 bullet points, written like a group chat log, not a Gantt chart.</div>
+    </div>
+
+    <div class="arrow-connector">
+      <svg viewBox="0 0 60 70"><path d="M30 4 C50 20 50 50 30 62" stroke="var(--ink)" stroke-width="2.5" fill="none"/><path d="M22 54 L30 66 L38 54" stroke="var(--ink)" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/></svg>
+    </div>
+
+    <div class="stage-card">
+      <div class="stage-icon">
+        <svg viewBox="0 0 60 60"><path d="M12 40 C10 22 22 10 34 12 C33 8 38 6 41 9 C39 12 40 14 42 15 C50 19 52 30 46 38 C48 42 46 46 42 46 L38 44 C34 47 26 47 20 44 C16 46 12 44 12 40Z" fill="#7C6CE0" stroke="var(--ink)" stroke-width="2"/><circle cx="36" cy="22" r="3" fill="#fff" stroke="var(--ink)" stroke-width="1.5"/><circle cx="37" cy="22" r="1.2" fill="var(--ink)"/><path d="M44 16 C48 14 50 16 48 19" stroke="var(--ink)" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+      </div>
+      <span class="stage-label">the concept</span>
+      <h2>the napkin version</h2>
+      <p class="prompt">your first sketch, doodle, or "concept art," before any real building happened. the messier and more ambitious-looking compared to the final build, the funnier.</p>
+      <div class="include-box"><b>include:</b> one image (hand-drawn, whiteboard photo, rough sketch) + a one-line caption roasting your own original plan.</div>
+    </div>
+
+    <div class="arrow-connector">
+      <svg viewBox="0 0 60 70"><path d="M30 4 C10 20 10 50 30 62" stroke="var(--ink)" stroke-width="2.5" fill="none"/><path d="M22 54 L30 66 L38 54" stroke="var(--ink)" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/></svg>
+    </div>
+
+    <div class="stage-card">
+      <div class="stage-icon">
+        <svg viewBox="0 0 60 60"><path d="M12 40 C10 22 22 10 34 12 C33 8 38 5 42 8 C40 11 40 14 42 16 C50 20 52 30 46 38 C48 42 46 46 42 46 L38 44 C34 47 26 47 20 44 C16 46 12 44 12 40Z" fill="#FFC24B" stroke="var(--ink)" stroke-width="2"/><circle cx="36" cy="22" r="2.4" fill="var(--ink)"/><path d="M46 30 C52 28 56 32 53 37 C51 34 50 36 51 39 C48 36 47 33 46 30Z" fill="#FF5A36" stroke="var(--ink)" stroke-width="1.5"/></svg>
+      </div>
+      <span class="stage-label">the actual thing</span>
+      <h2>what you actually built</h2>
+      <p class="prompt">the real project, hardware, software, or both, described plainly and a little dramatically.</p>
+      <ul>
+        <li><b>the problem:</b> what it pretends to solve. treat it like a TED talk about something nobody asked to be fixed.</li>
+        <li><b>the fix:</b> what it actually does, in plain language. no jargon.</li>
+        <li><b>how it's made:</b> a short breakdown by component: software, hardware, physical build, power.</li>
+      </ul>
+      <div class="include-box"><b>include:</b> at least 2–3 images or a short demo GIF/video of the actual build.</div>
+    </div>
+
+    <div class="arrow-connector">
+      <svg viewBox="0 0 60 70"><path d="M30 4 C50 20 50 50 30 62" stroke="var(--ink)" stroke-width="2.5" fill="none"/><path d="M22 54 L30 66 L38 54" stroke="var(--ink)" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/></svg>
+    </div>
+
+    <div class="stage-card">
+      <div class="stage-icon">
+        <svg viewBox="0 0 60 60"><path d="M12 40 C10 22 22 10 34 12 C33 8 38 5 42 8 C40 11 40 14 42 16 C50 20 52 30 46 38 C48 42 46 46 42 46 L38 44 C34 47 26 47 20 44 C16 46 12 44 12 40Z" fill="#4FAE7A" stroke="var(--ink)" stroke-width="2"/><path d="M32 24 Q36 27 40 24" stroke="var(--ink)" stroke-width="2" fill="none" stroke-linecap="round"/><circle cx="36" cy="19" r="1.8" fill="var(--ink)"/><path d="M16 34 C12 28 16 22 22 24 C20 28 20 32 16 34Z" fill="#fff" stroke="var(--ink)" stroke-width="1.5"/></svg>
+      </div>
+      <span class="stage-label">the verdict</span>
+      <h2>from the team</h2>
+      <p class="prompt">a closing note on how the whole thing actually felt to build. best moment, worst moment, would you do it again?</p>
+      <div class="include-box"><b>include:</b> one honest, funny quote from the team + links to GitHub / demo video / design files.</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- EXAMPLE LINK -->
+<section>
+  <div class="wrap">
+    <div class="example-callout">
+      <h3>want to see this filled in?</h3>
+      <p>here's a full example landing page (a wearable robotic butterfly that judges your focus) following this exact roadmap.</p>
+      <a class="example-btn" href="#" target="_blank" rel="noopener">see the example →</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  made for makers, by makers. useless projects, tinkerhub.
+</footer>
+
+</body>
+</html>
