@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -83,6 +83,17 @@
   .arrow-connector svg{width:100%; height:100%; display:block;}
 
   /* EXAMPLE LINK CALLOUT */
+  .photo-nudge{
+    display:flex; align-items:flex-start; gap:14px;
+    border:1.5px dashed var(--ink); border-radius:18px;
+    padding:20px 24px; margin-bottom:36px;
+    background:#FFFDF5;
+    max-width:680px;
+  }
+  .photo-nudge .emoji{font-size:1.4rem; line-height:1;}
+  .photo-nudge p{margin:0; color:var(--sub); font-size:0.96rem; line-height:1.65;}
+  .photo-nudge b{color:var(--ink); font-weight:700;}
+
   .example-callout{
     border:2px solid var(--ink); border-radius:20px; padding:30px 34px;
     text-align:center; margin-top:20px;
@@ -131,6 +142,11 @@
 <section>
   <div class="wrap roadmap">
 
+    <div class="photo-nudge">
+      <span class="emoji">📸</span>
+      <p><b>photos say more than paragraphs.</b> drop them in wherever — the idea forming, something breaking, someone asleep on a keyboard, a good moment, the final thing. no captions required, but a line under each one helps.</p>
+    </div>
+
     <div class="stage-card">
       <div class="stage-icon">
         <svg viewBox="0 0 60 60"><path d="M12 40 C10 22 22 10 34 12 C33 8 38 5 42 8 C40 11 40 14 42 16 C50 20 52 30 46 38 C48 42 46 46 42 46 L38 44 C34 47 26 47 20 44 C16 46 12 44 12 40Z" fill="#FF5A36" stroke="var(--ink)" stroke-width="2"/><circle cx="36" cy="22" r="2.4" fill="var(--ink)"/><path d="M42 32 L50 30 M42 36 L49 37" stroke="var(--ink)" stroke-width="2" stroke-linecap="round"/></svg>
@@ -138,11 +154,11 @@
       <span class="stage-label">origin story</span>
       <h2>the spark</h2>
       <p class="prompt">the exact moment the idea happened. was it a joke that went too far? a dare? someone too sleep-deprived to think straight at 11 PM? set the scene: who said what, and what made everyone go "wait... we could actually build that."</p>
-      <div class="include-box"><b>include:</b> 2–4 sentences of the origin story + one direct quote from the moment.</div>
+      <div class="include-box"><b>include:</b> a sentence or two, not an essay. a photo too, if you happened to catch the actual moment before you showed up.</div>
     </div>
 
     <div class="arrow-connector">
-      <svg viewBox="0 0 60 70"><path d="M30 4 C10 20 10 50 30 62" stroke="var(--ink)" stroke-width="2.5" fill="none"/><path d="M22 54 L30 66 L38 54" stroke="var(--ink)" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/></svg>
+      <svg viewBox="0 0 60 64"><path d="M30 4 C52 12 8 22 30 30 C48 36 12 40 30 40 L30 48" stroke="var(--ink)" stroke-width="2.5" fill="none" stroke-linecap="round"/><path d="M18 44 L30 58 L42 44" stroke="var(--ink)" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/></svg>
     </div>
 
     <div class="stage-card">
@@ -161,7 +177,7 @@
     </div>
 
     <div class="arrow-connector">
-      <svg viewBox="0 0 60 70"><path d="M30 4 C50 20 50 50 30 62" stroke="var(--ink)" stroke-width="2.5" fill="none"/><path d="M22 54 L30 66 L38 54" stroke="var(--ink)" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/></svg>
+      <svg viewBox="0 0 60 64"><path d="M30 4 C8 12 52 22 30 30 C12 36 48 40 30 40 L30 48" stroke="var(--ink)" stroke-width="2.5" fill="none" stroke-linecap="round"/><path d="M18 44 L30 58 L42 44" stroke="var(--ink)" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/></svg>
     </div>
 
     <div class="stage-card">
@@ -175,7 +191,7 @@
     </div>
 
     <div class="arrow-connector">
-      <svg viewBox="0 0 60 70"><path d="M30 4 C10 20 10 50 30 62" stroke="var(--ink)" stroke-width="2.5" fill="none"/><path d="M22 54 L30 66 L38 54" stroke="var(--ink)" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/></svg>
+      <svg viewBox="0 0 60 64"><path d="M30 4 C52 12 8 22 30 30 C48 36 12 40 30 40 L30 48" stroke="var(--ink)" stroke-width="2.5" fill="none" stroke-linecap="round"/><path d="M18 44 L30 58 L42 44" stroke="var(--ink)" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/></svg>
     </div>
 
     <div class="stage-card">
@@ -190,11 +206,11 @@
         <li><b>the fix:</b> what it actually does, in plain language. no jargon.</li>
         <li><b>how it's made:</b> a short breakdown by component: software, hardware, physical build, power.</li>
       </ul>
-      <div class="include-box"><b>include:</b> at least 2–3 images or a short demo GIF/video of the actual build.</div>
+      <div class="include-box"><b>include:</b> this is the place to go loose with photos — not just the final product, but the mess along the way. drop them anywhere in this section, a short line under each is enough.</div>
     </div>
 
     <div class="arrow-connector">
-      <svg viewBox="0 0 60 70"><path d="M30 4 C50 20 50 50 30 62" stroke="var(--ink)" stroke-width="2.5" fill="none"/><path d="M22 54 L30 66 L38 54" stroke="var(--ink)" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/></svg>
+      <svg viewBox="0 0 60 64"><path d="M30 4 C8 12 52 22 30 30 C12 36 48 40 30 40 L30 48" stroke="var(--ink)" stroke-width="2.5" fill="none" stroke-linecap="round"/><path d="M18 44 L30 58 L42 44" stroke="var(--ink)" stroke-width="2.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/></svg>
     </div>
 
     <div class="stage-card">
@@ -204,7 +220,7 @@
       <span class="stage-label">the verdict</span>
       <h2>from the team</h2>
       <p class="prompt">a closing note on how the whole thing actually felt to build. best moment, worst moment, would you do it again?</p>
-      <div class="include-box"><b>include:</b> one honest, funny quote from the team + links to GitHub / demo video / design files.</div>
+      <div class="include-box"><b>include:</b> one honest, funny quote from the team + links to GitHub / demo video / design files. end with one of you and the finished thing.</div>
     </div>
 
   </div>
@@ -216,7 +232,7 @@
     <div class="example-callout">
       <h3>want to see this filled in?</h3>
       <p>here's a full example landing page (a wearable robotic butterfly that judges your focus) following this exact roadmap.</p>
-      <a class="example-btn" href="https://uselessprojects-one.vercel.app/" target="_blank" rel="noopener">see the example →</a>
+      <a class="example-btn" href="#" target="_blank" rel="noopener">see the example →</a>
     </div>
   </div>
 </section>
